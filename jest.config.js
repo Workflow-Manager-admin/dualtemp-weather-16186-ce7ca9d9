@@ -6,8 +6,8 @@ module.exports = {
     // Use babel-jest for all JavaScript/TypeScript/React sources
     '^.+\\.[jt]sx?$': 'babel-jest'
   },
-  // Only ignore unrelated node_modules: allow react-native, @react-native, react-clone-referenced-element, @react-navigation, metro, @react-native-community
+  // Broader pattern: transform all react, react-native, and related packages from node_modules
   transformIgnorePatterns: [
-    'node_modules/(?!(react-native|@react-native|react-clone-referenced-element|@react-navigation|metro|@react-native-community)/)'
+    'node_modules/(?!((jest-)?react|react-native|@react-native|@react-navigation|metro|@react-native-community|@testing-library)/)'
   ]
 };
