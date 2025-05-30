@@ -8,19 +8,24 @@ module.exports = {
   },
   // Aggressively whitelist: transform *all* react-native, @react-native, and other modern/ESM packages
   transformIgnorePatterns: [
-    '/node_modules/(?!(react-native' +
-      '|@react-native' +
-      '|@testing-library' +
-      '|@babel' +
-      '|metro' +
-      '|jest' +
-      '|expo' +
-      '|react-native-vector-icons' +
-      '|react-clone-referenced-element' +
-      '|react-navigation' +
-      '|pretty-format' +
-      '|@expo' +
-      '|@storybook' +
-      ')/)'
+    "node_modules/(?!(react-native"
+      + "|@react-native"
+      + "|@react-navigation"
+      + "|@react-native-community"
+      + "|react-clone-referenced-element"
+      + "|react-navigation"
+      + "|@unimodules"
+      + "|expo(nent)?"
+      + "|@expo(nent)?"
+      + "|expo-router"
+      + "|@expo/browser-polyfill"
+      + "|(@babel|babel-runtime)"
+      + "|@testing-library"
+      + "|metro"
+      + "|jest"
+      + "|react-native-vector-icons"
+      + "|pretty-format"
+      + "|@storybook"
+      + ")/)"
   ]
 };
