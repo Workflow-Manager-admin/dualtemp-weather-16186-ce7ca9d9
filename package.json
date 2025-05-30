@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@babel/preset-flow": "^7.27.1",
     "@babel/preset-typescript": "^7.27.1",
     "@testing-library/jest-native": "^5.4.3",
     "@testing-library/react-native": "^13.2.0",
