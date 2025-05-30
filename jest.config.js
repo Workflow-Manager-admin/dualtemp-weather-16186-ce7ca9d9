@@ -6,8 +6,8 @@ module.exports = {
     // Use babel-jest for all JavaScript/TypeScript/React sources
     '^.+\\.[jt]sx?$': 'babel-jest'
   },
-  // Broader pattern: transform all react, react-native, and related packages from node_modules
+  // Ensure all react-native, related and community modules are always transformed, for Flow/modern JS.
   transformIgnorePatterns: [
-    'node_modules/(?!((jest-)?react|react-native|@react-native|@react-navigation|metro|@react-native-community|@testing-library)/)'
+    "node_modules/(?!(react-native|@react-native|@react-native-community|@react-navigation|metro|@testing-library|react|jest-react-native|react-test-renderer)/)"
   ]
 };
